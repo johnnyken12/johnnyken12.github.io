@@ -4,98 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wutthichai Cheuanrrom - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/welcome.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="picture/test.jpg" alt="Wutthichai Cheuanrrom" class="profile-img">
-        <h1>Wutthichai Cheuanrrom</h1>
-        <p>Network Engineer</p>
-    </header>
-
-    <nav class="navbar">
-        <div class="nav-brand">
-            <a href="#" class="logo">Portfolio</a>
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <h1>Welcome to My Portfolio</h1>
+            <button class="enter-button" id="enterButton">Enter Portfolio</button>
         </div>
-        <div class="nav-toggle" id="navToggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>&emsp;&emsp;&emsp;Hello! I'm Wutthichai Cheuanrrom, a passionate network engineer and IT support specialist with a strong focus on designing, configuring, and maintaining secure networks. My journey into networking began when I had the opportunity to study at Hebei Software Institute in China as an exchange student. During that time, I discovered my passion for network infrastructure, Cisco and Huawei configurations, and troubleshooting complex networking issues.
+    <!-- Main Content -->
+    <div class="main-content blur" id="mainContent">
+        <header>
+            <img src="picture/test.jpg" alt="Wutthichai Cheuanrrom" class="profile-img">
+            <h1>Wutthichai Cheuanrrom</h1>
+            <p>Network Engineer</p>
+        </header>
 
-            In addition to networking, I have hands-on experience in IT support, helping users troubleshoot hardware, software, and connectivity issues to ensure smooth operations. I enjoy solving problems, optimizing systems, and providing efficient technical solutions.
-            
-            My goal is to expand my expertise in network security, cloud networking, and automation while continuing to support IT environments effectively. I'm always eager to learn, adapt, and take on new challenges in the ever-evolving tech industry.</p>
-    </section>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#" class="logo">Portfolio</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="picture/book store.png" alt="Project 1">
-                <div class="project-content">
-                    <h3>Bookstore Website Project</h3>
-                    <p>This project is about creating a bookstore website using PHP, HTML, CSS, and JavaScript, with a database connection.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>&emsp;&emsp;&emsp;Hello! I'm Wutthichai Cheuanrrom, a passionate network engineer and IT support specialist with a strong focus on designing, configuring, and maintaining secure networks. My journey into networking began when I had the opportunity to study at Hebei Software Institute in China as an exchange student. During that time, I discovered my passion for network infrastructure, Cisco and Huawei configurations, and troubleshooting complex networking issues.
+    
+                In addition to networking, I have hands-on experience in IT support, helping users troubleshoot hardware, software, and connectivity issues to ensure smooth operations. I enjoy solving problems, optimizing systems, and providing efficient technical solutions.
+                
+                My goal is to expand my expertise in network security, cloud networking, and automation while continuing to support IT environments effectively. I'm always eager to learn, adapt, and take on new challenges in the ever-evolving tech industry.</p>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="picture/book store.png" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Bookstore Website Project</h3>
+                        <p>This project is about creating a bookstore website using PHP, HTML, CSS, and JavaScript, with a database connection.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="picture/bot.PNG" alt="Project 2">
+                    <div class="project-content">
+                        <h3>Discord Voice Chat Notifier Bot</h3>
+                        <p>This project solves the problem of not knowing who joins a voice chat in Discord. I created a bot that sends notifications when someone joins a voice channel, improving user awareness and interaction.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/picture/old.jpg" alt="Project 3">
+                    <div class="project-content">
+                        <h3>Web Development Project</h3>
+                        <p>This project marked the beginning of my journey into web development. During my internship at a company, I was given the opportunity to create a website for them. At the time, I was still a beginner, so I applied the coding skills I had and continuously learned throughout the process.</p>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="picture/bot.PNG" alt="Project 2">
-                <div class="project-content">
-                    <h3>Discord Voice Chat Notifier Bot</h3>
-                    <p>This project solves the problem of not knowing who joins a voice chat in Discord. I created a bot that sends notifications when someone joins a voice channel, improving user awareness and interaction.</p>
+        </section>
+    
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Feel free to reach out to me for any opportunities or collaborations.</p>
+                <p>Email: wutthichaichuenarrom@gmail.com</p>
+                <p>Telephone: 098-065-0569 </p>
+                <div class="social-links">
+                    <a href="https://github.com/johnnyken12" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/vandel_fein/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="/picture/old.jpg" alt="Project 3">
-                <div class="project-content">
-                    <h3>Web Development Project</h3>
-                    <p>This project marked the beginning of my journey into web development. During my internship at a company, I was given the opportunity to create a website for them. At the time, I was still a beginner, so I applied the coding skills I had and continuously learned throughout the process.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        <footer>
+            <p>&copy; 2025 Wutthichai Cheuanrrom. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">C</span>
-            <span class="skill-tag">Git</span>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Feel free to reach out to me for any opportunities or collaborations.</p>
-            <p>Email: wutthichaichuenarrom@gmail.com</p>
-            <p>Telephone: 098-065-0569 </p>
-            <div class="social-links">
-                <a href="https://github.com/johnnyken12" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/vandel_fein/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Wutthichai Cheuanrrom. All rights reserved.</p>
-    </footer>
+    <script src="/js/welcome.js"></script>
+    <script src="/js/navbar.js"></script>
 </body>
 </html>
